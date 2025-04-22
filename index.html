@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poojitha Varma - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Devicon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <!-- AOS CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F7F9FC;
+            color: #1F2A40;
+        }
+
+        .dark-mode {
+            background-color: #1F2A40;
+            color: #F7F9FC;
+        }
+
+        .navbar {
+            background-color: #4E5D78;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: #F7F9FC !important;
+        }
+
+        .nav-link:hover {
+            color: #00BFA6 !important;
+        }
+
+        .btn-custom {
+            background-color: #FF8360;
+            color: #1F2A40;
+            border: 2px solid #A9B4C2;
+            border-radius: 6px;
+        }
+
+        .highlight {
+            color: #FF8360;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            background-color: #4E5D78;
+            color: #F7F9FC;
+            padding: 2rem 0;
+        }
+
+        .footer a {
+            color: #F7F9FC;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #00BFA6;
+        }
+
+        .tech-stack {
+            font-size: 0.85rem;
+            background-color: #E3E9F0;
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin: 2px;
+        }
+
+        .toggle-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 999;
+        }
+
+        #theme-icon:hover {
+            transform: scale(1.1);
+            color: #FF8360;
+            transition: 0.3s ease;
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #FF8360;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 40px;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 40px;
+            height: 40px;
+        }
+
+        .timeline-content h5 {
+            font-weight: 600;
+        }
+
+        .tech-icons i {
+            font-size: 22px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Poojitha Varma</a>
+            <!-- Floating Theme Toggle Icon -->
+            <!-- Floating Theme Toggle Icon -->
+            <div id="theme-toggle-icon"
+                style="position: fixed;bottom: 20px;right: 20px;background-color: var(--bs-body-bg);border: 1px solid #ddd;padding: 10px;border-radius: 50%;box-shadow: 0 2px 10px rgba(0,0,0,0.2);cursor: pointer;z-index: 9999;transition: background-color 0.3s ease;">
+                <i id="theme-icon" data-lucide="moon"></i>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="py-5">
+        <div class="container d-flex flex-column flex-lg-row align-items-center justify-content-between">
+            <div class="text-center text-lg-start mb-4 mb-lg-0">
+                <h1>Hi, My name is <span class="highlight">Poojitha Varma</span></h1>
+                <h4 class="my-3">I am a Passionate <span id="element" class="highlight"></span></h4>
+                <div class="mt-4">
+                    <a href="projectfiles/Poojitha-wd-Resume.pdf" target="_blank"
+                        class="btn btn-outline-secondary btn-custom mt-2">View Resume</a>
+                    <a href="#projects" target="_blank" class="btn btn-outline-secondary btn-custom mt-2">View
+                        Project</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/fedev2.png" alt="Developer" class="img-fluid" style="max-width: 450px;">
+            </div>
+        </div>
+    </header>
+    <!-- Work Experience Section -->
+    <hr class="container" style="border-top: 2px solid #FF8360;">
+
+    <section class="py-5">
+        <div class="container">
+            <p class="text-muted">What I have done so far...</p>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <!-- Talleen Experience -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <img src="images/talleen logo.png" alt="Talleen" style="width:40px;">
+                    </div>
+                    <div class="timeline-content">
+                        <h5>Web Developer– Talleen (2024–present)</h5>
+                        <p>Built responsive landing pages and maintained client websites. Collaborated on UX/UI revamps
+                            and optimized code for performance.</p>
+                        <div class="tech-icons mt-2">
+                            <i class="devicon-wordpress-plain colored"></i>
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nokia Experience -->
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-icon">
+                        <img src="images/nokia logo.png" alt="Nokia" style="width:40px;">
+                    </div>
+                    <div class="timeline-content">
+                        <h5>Software Engineering Intern – Nokia (2023–2024)</h5>
+                        <p>Contributed to front-end components and UX improvements for internal tools. Worked in Agile
+                            sprints and collaborated closely with design and QA teams.</p>
+                        <div class="tech-icons mt-2">
+                            <i class="devicon-python-plain colored"></i>
+                            <i class="devicon-ride-plain colored"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <hr class="container" style="border-top: 2px solid #FF8360;">
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5" data-aos="fade-down">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0 text-center" data-aos="fade-right">
+                    <img src="images/fdev.webp" class="img-fluid rounded shadow mt-0" alt="Poojitha Varma"
+                        style="max-height:650px;">
+                </div>
+
+                <!-- Info -->
+                <div class="col-md-6" data-aos="fade-left">
+                    <h3 class="mb-3"><span id="typed"></span></h3>
+                    <p>
+                        I'm a passionate <strong>Frontend Developer</strong> with hands-on experience in crafting
+                        modern, responsive, and visually appealing websites using
+                        <span class="highlight">HTML, CSS, JavaScript, and Bootstrap</span>.
+                    </p>
+                    <p>
+                        My portfolio includes live and local projects such as Luxant Hotels,
+                        AHOM Hotel, and a cultural WIX-based project for Khawja Bande Nawaz Dargah. These experiences
+                        sharpened my skills in delivering smooth, clean, and functional web experiences.
+                    </p>
+                    <p>
+                        I enjoy translating ideas into digital products with beautiful and intuitive user interfaces.
+                        Currently, I’m deepening my frontend skills and exploring animations, UX design, and JavaScript
+                        frameworks.
+                    </p>
+
+                    <!-- Stats -->
+                    <div class="row text-center my-4">
+                        <div class="col-4">
+                            <h4 class="fw-bold">7+</h4>
+                            <p class="mb-0">Projects</p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fw-bold">1</h4>
+                            <p class="mb-0">Internships</p>
+                        </div>
+                        <div class="col-4">
+                            <h4 class="fw-bold">1.2 yr</h4>
+                            <p class="mb-0">Hands-on Experience</p>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-flex align-items-center gap-3">
+                        <!-- <a href="files/Poojitha_Varma_Resume.pdf" class="btn btn-outline-secondary btn-custom mt-2 " download>
+                            <i class="fas fa-file-download me-2"></i>Download Resume</a> -->
+                        <a href="https://github.com/poojithachithari" target="_blank"
+                            class="btn btn-outline-secondary btn-custom mt-2" Github>
+                            <i class="fab fa-github"></i> Github</a>
+                        <a href="https://linkedin.com/in/poojithavarma" target="_blank"
+                            class="btn btn-outline-secondary btn-custom mt-2" LinkedIn>
+                            <i class="fab fa-linkedin"></i>LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <hr class="container" style="border-top: 2px solid #FF8360; padding-bottom: -20px;">
+    <section id="tech-stack" class="py-5" style="padding:0;">
+    <div class="container "  style="padding:0; margin: -40px 120px;" >    
+    <!-- Tech Stack Badges -->
+    <!-- <div class="mt-4" data-aos="fade-up">
+                        <h5 class="mb-3 fw-semibold">Tech Stack</h5>
+                        <div class="d-flex flex-wrap gap-3">
+                            <span class="badge bg-dark text-light px-3 py-2 shadow-sm">HTML5</span>
+                            <span class="badge bg-primary text-light px-3 py-2 shadow-sm">CSS3</span>
+                            <span class="badge bg-warning text-dark px-3 py-2 shadow-sm">JavaScript</span>
+                            <span class="badge bg-info text-dark px-3 py-2 shadow-sm">Bootstrap</span>
+                            <span class="badge bg-success text-light px-3 py-2 shadow-sm">Git</span>
+                            <span class="badge bg-secondary text-light px-3 py-2 shadow-sm">Responsive Design</span>
+                            <span class="badge bg-danger text-light px-3 py-2 shadow-sm">Figma (Basic)</span> 
+                            <span class="badge bg-dark text-light px-3 py-2 shadow-sm">WordPress</span>
+                        </div>
+                    </div> -->
+    <!-- Tech stack Icons -->
+    <div class="text-center mt-2">
+        <h4 class="mb-4">Tech Stack</h4>
+        <div class="d-flex flex-wrap justify-content-center gap-4">
+            <div class="text-center">
+                <i class="devicon-html5-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">HTML5</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-css3-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">CSS3</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-javascript-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">JavaScript</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-bootstrap-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">Bootstrap</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-python-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">Python</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-nodejs-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">Node.js</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-mysql-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">MySQL</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-java-plain colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">Java</p>
+            </div>
+            <div class="text-center">
+                <i class="devicon-github-original colored" style="font-size: 3rem;"></i>
+                <p class="mt-2">GitHub</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+    <!-- Projects Section -->
+    <hr class="container" style="border-top: 2px solid #FF8360;">
+    <section id="projects" class="py-5 ">
+        <div class="container">
+            <h2 class="text-center mb-5 coral">Projects</h2>
+            <div class="row">
+                <!-- Luxan Hotel -->
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 shadow">
+                        <img src="images/project1.png" class="card-img-top" alt="Luxan Hotels">
+                        <div class="card-body">
+                            <h5 class="card-title">Luxan Hotels Website</h5>
+                            <p class="card-text">A modern hospitality site built using WordPress. Integrated booking &
+                                responsive design.</p>
+                            <div><span class="tech-stack">WordPress</span></div>
+                            <a href="https://luxanthotels.com" target="_blank" class="btn btn-custom mt-2">View
+                                Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ahom Hotel -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow">
+                        <img src="images/project2.png" class="card-img-top" alt="Ahom Hotel">
+                        <div class="card-body">
+                            <h5 class="card-title">Ahom Hotel Website</h5>
+                            <p class="card-text">Static responsive hotel website designed using HTML/CSS.</p>
+                            <div><span class="tech-stack">HTML</span> <span class="tech-stack">CSS</span></div>
+                            <a href="https://ahomhotel.com" class="btn btn-custom mt-2 ">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KBN Dargah -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow">
+                        <img src="images/project3.png" class="card-img-top" alt="KBN Dargah">
+                        <div class="card-body">
+                            <h5 class="card-title">KBN Dargah Website</h5>
+                            <p class="card-text">Built a spiritual site using Wix for Khawja Bande Nawaz Dargah.</p>
+                            <div><span class="tech-stack">WIX</span></div>
+                            <a href="#" class="btn btn-custom mt-2 disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- VARMAS GRACE -->
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="card h-100 shadow">
+                        <img src="images/project4.png" class="card-img-top" alt="VARMAS GRACE">
+                        <div class="card-body">
+                            <h5 class="card-title">VARMAS GRACE</h5>
+                            <p class="card-text">Promotional site for a YouTube channel built as part of MCA web
+                                programming project.</p>
+                            <div><span class="tech-stack">HTML</span> <span class="tech-stack">CSS</span> <span
+                                    class="tech-stack">JavaScript</span> <span class="tech-stack">Bootstrap</span></div>
+                            <a href="projectfiles/Varmas Grace.pdf" class="btn btn-custom mt-2" download>Download
+                                PPT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bank Note Auth -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 shadow">
+                        <img src="images/project5.png" class="card-img-top" alt="Bank Note Auth">
+                        <div class="card-body">
+                            <h5 class="card-title">Bank Note Authentication</h5>
+                            <p class="card-text">ML model to predict the legitimacy of currency using Big Data, Python &
+                                Scikit-learn.</p>
+                            <div><span class="tech-stack">Python</span> <span class="tech-stack">Machine Learning</span>
+                                <span class="tech-stack">Big Data</span>
+                            </div>
+                            <a href="projectfiles/Bank Note Authentication.pdf" class="btn btn-custom mt-2"
+                                download>Download PPT</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blockchain Voting -->
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 shadow">
+                        <img src="images/project6.png" class="card-img-top" alt="Voting System">
+                        <div class="card-body">
+                            <h5 class="card-title">Blockchain Voting System</h5>
+                            <p class="card-text">Decentralized voting platform using Blockchain, Node.js, MySQL &
+                                Truffle.</p>
+                            <div><span class="tech-stack">Blockchain</span> <span class="tech-stack">Node.js</span>
+                                <span class="tech-stack">Truffle</span> <span class="tech-stack">MySQL</span>
+                            </div>
+                            <a href="projectfiles/Blockchain.pdf" class="btn btn-custom mt-2" download>Download PPT</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr class="container" style="border-top: 2px solid #FF8360;">
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-4">Contact Me</h2>
+            <form action="https://formspree.io/f/meogjkll" method="POST">
+                <div id="form-status" class="mb-3 text-success" style="display:none;">✅ Message sent successfully!</div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <textarea name="message" class="form-control" rows="5" placeholder="Your Message"
+                            required></textarea>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-custom">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>Poojitha Varma</h5>
+                </div>
+                <div class="col-md-3">
+                    <a href="#">Home</a><br>
+                    <a href="#about">About</a><br>
+                    <a href="#contact">Contact</a><br>
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="col-md-6">
+                    <p class="mt-3">Copyright &#169; Poojitha Varma | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lucide Icons Script -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Bootstrap, Typed.js, AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.'],
+            typeSpeed: 50,
+        });
+        AOS.init();
+
+        // Lucide theme toggle
+        lucide.createIcons();
+
+        const themeToggleIcon = document.getElementById("theme-toggle-icon");
+        const themeIcon = document.getElementById("theme-icon");
+        const body = document.body;
+
+        function applyTheme(theme) {
+            if (theme === "dark") {
+                body.classList.add("dark-mode");
+                themeIcon.setAttribute("data-lucide", "sun");
+            } else {
+                body.classList.remove("dark-mode");
+                themeIcon.setAttribute("data-lucide", "moon");
+            }
+            lucide.createIcons();
+            localStorage.setItem("theme", theme);
+        }
+
+        const savedTheme = localStorage.getItem("theme") || "light";
+        applyTheme(savedTheme);
+
+        // 🔧 Attach listener to the outer div
+        themeToggleIcon.addEventListener("click", () => {
+            const newTheme = body.classList.contains("dark-mode") ? "light" : "dark";
+            applyTheme(newTheme);
+        });
+
+        // Contact form handling
+        const form = document.querySelector("form");
+        const status = document.getElementById("form-status");
+
+        form.addEventListener("submit", async function (e) {
+            e.preventDefault();
+            const data = new FormData(form);
+            const action = form.getAttribute("action");
+
+            const response = await fetch(action, {
+                method: "POST",
+                body: data,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                status.style.display = "block";
+                form.reset();
+            } else {
+                status.innerText = "❌ Something went wrong. Please try again.";
+                status.classList.remove("text-success");
+                status.classList.add("text-danger");
+                status.style.display = "block";
+            }
+        });
+    </script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ["Hi, I'm Poojitha Varma 👋", "Frontend Developer 💻", "Passionate Web Creator 🌐"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            backDelay: 1500,
+            loop: true
+        });
+    </script>
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // animation duration
+            offset: 80, // offset from the top to trigger animation
+            once: true // animate only once
+        });
+    </script>
+
+
+</body>
+
+</html>
